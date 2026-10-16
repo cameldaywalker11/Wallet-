@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camel Wallet - History</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .history-table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+    .history-table th, .history-table td { padding: 8px 6px; text-align: left; border-bottom: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Transaction History</h2>
+    <p class="sub-header">Your last 100 transactions</p>
+    <table class="history-table">
+      <thead>
+        <tr><th>Date</th><th>Type</th><th>Details</th><th>Amount</th></tr>
+      </thead>
+      <tbody id="historyBody">
+        <tr><td colspan="4" style="text-align:center;">Loading...</td></tr>
+      </tbody>
+    </table>
+    <p style="text-align: center; margin-top: 15px; font-size: 0.9em;">
+      <a href="dashboard.html" style="color: var(--accent-green); font-weight: bold;">Back to Dashboard</a>
+    </p>
+  </div>
+  <script src="conn.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', loadHistory);</script>
+</body>
+</html>

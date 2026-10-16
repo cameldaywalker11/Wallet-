@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camel Wallet - Complain</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Make a Complaint</h2>
+    <p class="sub-header">Tell us what went wrong</p>
+    <form onsubmit="handleComplain(event)">
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" id="subject" placeholder="Short title">
+      </div>
+      <div class="form-group">
+        <label>Complaint</label>
+        <textarea id="message" rows="5" required placeholder="Describe the problem"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+    <p style="text-align: center; margin-top: 15px; font-size: 0.9em;">
+      <a href="dashboard.html" style="color: var(--accent-green); font-weight: bold;">Back to Dashboard</a>
+    </p>
+  </div>
+  <script src="conn.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', requireLogin);</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camel Wallet - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Camel Wallet - Login</h2>
+    <p class="sub-header">Access your account securely</p>
+    <form onsubmit="handleLogin(event)">
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" id="phone" required placeholder="0500000000">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit" class="btn-submit">Log In</button>
+    </form>
+    <p style="text-align: center; margin-top: 15px; font-size: 0.9em;">
+      Don't have an account? <a href="signup.html" style="color: var(--accent-green); font-weight: bold;">Sign Up</a>
+    </p>
+  </div>
+  <script src="conn.js"></script>
+</body>
+</html>

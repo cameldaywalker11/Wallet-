@@ -1,0 +1,220 @@
+/* Color Palette: Light Pink & Green */
+:root {
+  --bg-primary: #FFF5F7;
+  --bg-card: #FFFFFF;
+  --accent-green: #2E7D32;
+  --accent-green-hover: #1B5E20;
+  --accent-pink: #F8BBD0;
+  --accent-pink-light: #FCE4EC;
+  --text-dark: #2C3E50;
+  --text-muted: #666666;
+  --border-color: #E0E0E0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 480px;
+  padding: 30px;
+  border-top: 6px solid var(--accent-green);
+}
+
+h1, h2, h3 {
+  color: var(--accent-green);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sub-header {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9em;
+  margin-bottom: 25px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  flex: 1;
+  background-color: var(--accent-pink-light);
+  color: var(--accent-green);
+  border: 1px solid var(--accent-pink);
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover, .nav-btn.active {
+  background-color: var(--accent-green);
+  color: white;
+  border-color: var(--accent-green);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #FAFAFA;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--accent-green);
+  background-color: #FFFFFF;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.radio-option:hover {
+  background-color: var(--accent-pink-light);
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: var(--accent-green);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: var(--accent-green-hover);
+}
+
+.btn-secondary {
+  background-color: var(--accent-pink);
+  color: var(--text-dark);
+}
+
+.balance-card {
+  background-color: var(--accent-pink-light);
+  border: 1px solid var(--accent-pink);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance-amount {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--accent-green);
+  margin-top: 5px;
+}
+
+.history-list {
+  list-style: none;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9em;
+}
+
+.history-item.deposit {
+  border-left: 4px solid var(--accent-green);
+}
+
+.history-item.transfer {
+  border-left: 4px solid #D32F2F;
+}
+
+.whatsapp-box {
+  text-align: center;
+  padding: 20px;
+  background-color: #E8F5E9;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.whatsapp-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.splash-container {
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
