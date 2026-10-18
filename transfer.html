@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camel Wallet - Transfer Money</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="nav-bar">
+      <a href="deposit.html" class="nav-btn">DEPOSIT</a>
+      <a href="transfer.html" class="nav-btn active">TRANSFER MONEY</a>
+      <a href="history.html" class="nav-btn">HISTORY</a>
+      <a href="complain.html" class="nav-btn">COMPLAIN</a>
+    </div>
+
+    <h3>Transfer Money</h3>
+    <p style="text-align: center; color: #555; margin-bottom: 15px;">
+      Transfers are only allowed between Camel Wallet accounts.
+    </p>
+
+    <form onsubmit="handleTransfer(event)">
+      <div class="form-group">
+        <label>Recipient Account Number</label>
+        <input type="text" id="recipient" required placeholder="0500000000">
+        <button type="button" id="searchBtn" class="btn-submit" onclick="searchRecipient()"
+                style="margin-top: 8px;">Search name on the account</button>
+        <div id="recipientName"
+             style="display: none; margin-top: 10px; font-weight: bold; text-align: center;"></div>
+      </div>
+      <div class="form-group">
+        <label>Amount (GHS)</label>
+        <input type="number" id="amount" min="0.01" step="0.01" required placeholder="0.00">
+      </div>
+      <div class="form-group">
+        <label>Your Pin</label>
+        <input type="password" id="pin" maxlength="4" required>
+      </div>
+      <button type="submit" id="sendBtn" class="btn-submit" disabled>Send Money</button>
+    </form>
+
+    <p style="text-align: center; margin-top: 15px; font-size: 0.9em;">
+      <a href="dashboard.html" style="color: var(--accent-green); font-weight: bold;">Back to Dashboard</a>
+    </p>
+  </div>
+  <script src="conn.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', initTransferPage);</script>
+</body>
+</html>
