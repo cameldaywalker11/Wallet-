@@ -32,6 +32,44 @@
       </ul>
     </div>
 
+    <!-- User Identity & Verification Section -->
+    <div style="margin-bottom: 20px; padding: 15px; border: 1px solid #e0e0e0; border-radius: 6px;">
+      <h3 style="margin-bottom: 12px;">Merchant Identity & Verification</h3>
+      
+      <div style="margin-bottom: 12px;">
+        <label for="fullName" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter your full name" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+      </div>
+
+      <div style="margin-bottom: 12px;">
+        <label for="country" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Country</label>
+        <input type="text" id="country" placeholder="e.g. Ghana" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+      </div>
+
+      <div style="margin-bottom: 12px;">
+        <label for="userType" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Category</label>
+        <select id="userType" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+          <option value="">Select Category</option>
+          <option value="programmer">Programmer / Developer</option>
+          <option value="business">Business Owner</option>
+        </select>
+      </div>
+
+      <div style="margin-bottom: 12px;">
+        <label for="ghanaCard" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Ghana Card Number / Upload</label>
+        <input type="file" id="ghanaCard" accept=".pdf, .jpg, .jpeg, .png" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+      </div>
+
+      <div style="margin-bottom: 12px;">
+        <label for="businessCert" style="display: block; margin-bottom: 5px; font-weight: bold; color: #333;">Business Certificate</label>
+        <input type="file" id="businessCert" accept=".pdf, .jpg, .jpeg, .png" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+      </div>
+
+      <p style="text-align: center; color: #2E7D32; font-weight: bold; margin-top: 10px;">
+        Submission under review
+      </p>
+    </div>
+
     <a href="transfer.html" class="btn-submit" style="display: block; text-align: center; text-decoration: none;">Send Money</a>
     <a href="dashboard.html" class="nav-btn" style="display: block; text-align: center; margin-top: 12px;">Go to Dashboard</a>
     <a href="index.html" class="nav-btn" style="display: block; text-align: center; margin-top: 12px;">Back to Home</a>
